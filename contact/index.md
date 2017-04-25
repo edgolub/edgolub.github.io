@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contact
-share: false
+share: false 
 --- 
 <form method="POST" action="http://formspree.io/golubicedis@gmail.com">
   <p><input type="email" name="email" placeholder="Your Email"></p>

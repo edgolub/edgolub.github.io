@@ -14,23 +14,26 @@ body {
 
 .navigation-wrapper {
 	@include container;
-	padding: 2em 0 1em;
+	padding: 0;
 	font-family: $heading-font;
 	font-weight: 700;
 	text-transform: uppercase;
 	@include clearfix;
+	border-bottom: 1px solid #dfdfdf;
 }
 
 /* Site name */
 .site-name {
 	@include grid(12,10);
-	@include prefix(12,1);
+	@include prefix(12,1); 
 	@include suffix(12,1);
 	margin-bottom: 1em;
 	float: none;
-	display: block;
+	display: none;
 	@include font-rem(24);
+
 	@media #{$small} {
+		display: block;
 		@include grid(12,2);
 		@include prefix(12,0.5);
 		@include suffix(12,0.5);
@@ -40,6 +43,7 @@ body {
 		@include grid(12,1.5);
 		@include prefix(12,2);
 	}
+
 }
 
 /* Top navigation links */
@@ -48,15 +52,20 @@ body {
 	@include prefix(12,1);
 	@include suffix(12,1);
 	margin-bottom: 1em;
+	margin-top: 1em;
 	float: none;
 	display: block;
+	padding: 0;
 	@media #{$small} {
+		margin-top: 0;
 		@include grid(12,9);
 		@include prefix(12,0);
 		@include suffix(12,0);
+		padding: 1.5em 0 .75em;
 	}
 	@media #{$x-large} {
 		@include grid(12,8);
+		padding: 2em 0 1em;
 	}
 	ul {
 		margin: 0;
@@ -83,10 +92,18 @@ body {
 			display: block;
 			padding: 10px 0;
 			decoration: none;
-			border-bottom: 0 solid transparent;
-			@include transition(all .2s);
+			border-bottom: 2px solid transparent;
+			@include transition(all .1s);
+			color: lighten($black,55);
+			&:hover {
+				color: lighten($black,40);
+				@media #{$small} {
+					border-bottom: 2px solid #575757;
+				}
+			}
+
 			@media #{$small} {
-				display: inline;
+				display: inline-block;
 				padding: 0;
 			}
 		}
@@ -270,18 +287,39 @@ $button-size: 1.5rem;
 		padding-bottom: .5em;
 		@include font-rem(28);
 		border-bottom: 1px solid lighten($black,70);
+		color: #878787;
 	}
 	article {
+		& .posttime {
+			margin: 3px 0;
+			font-family: Roboto, Segoe UI, Arial;
+			@include font-rem(14);    
+			color: #878787;
+			i {
+				display: inline-block;
+				margin-right: 5px;
+			}
+		}
 		h2 {
 			margin-bottom: 4px;
-			@include font-rem(20);
+			@include font-rem(28);
 			&.link-post {
 				margin-bottom: 0px + $doc-line-height;
 				margin-bottom: 0rem + ($doc-line-height / $doc-font-size);
 			}
+
+			& a {
+				display: inline-block;
+				padding: 3px 0;
+				border-bottom: 1px solid transparent;
+				&:hover {
+					border-bottom: 1px solid $text-color;
+				}
+			}
 		}
 		p {
-			@include font-rem(14);
+			@include font-rem(16);    
+			font-family: Roboto, Segoe UI, Arial;
 		}
 		p+p {
 			text-indent: 0;
@@ -452,6 +490,9 @@ $button-size: 1.5rem;
 	p > strong > a,
 	li > a {
 		text-decoration: underline;
+	}
+	p {
+		font-family: Roboto, Segoe UI, Arial;
 	}
 }
 
@@ -634,6 +675,8 @@ $button-size: 1.5rem;
 	@include clearfix;
 	clear: both;
 	padding-bottom: 3em;
+	padding-top: 2em;
+
 	a,
 	a:active,
 	a:visited,

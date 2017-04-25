@@ -1,20 +1,24 @@
 # Authors
 
-#billy_rick:
-#  name: Edis Golubich
-#  web: http://edgolub.github.io
-#  email: golubicedis@gmail.com
-#  bio:"Software Developer. Certified introvert. Reddit Lurker. Wannabe blogger. Web practitioner. SciFi addict. Unapologetic reader. The guy who leaves the stove on."
-#  avatar: bio-photo.png
-#  twitter: edgolub
-#  google:
-#    plus: BillyRick
-
-#cornelius_fiddlebone:
-#  name: Cornelius Fiddlebone
-#  email: cornelius@thewhip.com
-#  bio: "I ordered what?"
-#  avatar: bio-photo.jpg
-#  twitter: rhymeswithsackit
-#  google:
-#    plus: CorneliusFiddlebone
+edgolub:
+  name: Edis Golubich
+  web: http://edgolub.github.io
+  email: golubicedis@gmail.com
+  bio: 'Software Developer. Certified introvert. Reddit Lurker. Wannabe blogger. Web practitioner. SciFi addict. Unapologetic reader. The guy who leaves the stove on.'
+  avatar: me.jpg
+  disqus-shortname: edgolub
+  twitter: edgolub
+  goodreads: edgolub
+  facebook: golubkonjica
+  google:
+    plus: golubicedis
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: edgolub2
+  stackoverflow: 2606018/edis-golubich
+  linkedin: edgolub
+  codepen: edgolub
+  instagram: edgolub

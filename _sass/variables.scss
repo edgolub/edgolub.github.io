@@ -9,11 +9,16 @@
 $doc-font-size: 16;
 $doc-line-height: 26;
 $paragraph-indent: true !default;
-$base-font: 'PT Serif', serif;
+$base-font: 'PT Serif', sans-serif;
+$sans-font: 'Roboto','Arial',  sans-serif;
 $heading-font: 'PT Sans Narrow', sans-serif;
-$code-font: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+$code-font: Monaco,Consolas,"Lucida Console",monospace;
 $alt-font: $base-font;
 
+$monospace: Monaco,Consolas,"Lucida Console",monospace;
+$border-radius: 4px;
+$code-background-color: #fafafa;
+$box-shadow: 0 1px 1px rgba(0,0,0,0.125);
 /*
    Colors
    ========================================================================== */
@@ -63,7 +68,7 @@ $linkcolorfocus 	: darken($linkcolorvisited, 10);
    ========================================================================== */
 
 $micro            : "only screen and (min-width: 30em)";
-$small            : "only screen and (min-width: 37.5em)";
-$medium           : "only screen and (min-width: 48em)";
+$small            : "only screen and (min-width: 48.5em)";
+$medium           : "only screen and (min-width: 52em)";
 $large            : "only screen and (min-width: 62em)";
 $x-large          : "only screen and (min-width: 86.375em)";

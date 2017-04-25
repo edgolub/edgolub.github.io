@@ -95,12 +95,29 @@ figcaption {
 
 .notice {
 	margin-top: 1.5em;
-	padding: .5em 1em;
+	padding: .85em 1em;
 	text-indent: 0;
 	@include font-rem(14);
 	background-color: $body-color;
 	border: 1px solid darken($body-color,20);
 	@include rounded(3px);
+	
+	&.warning {
+		background-color: #fcf8e3;
+    	border-color: #faebcc;
+	}
+	&.danger {
+		    background-color: #f2dede;
+   		border-color: #ebccd1;
+	}
+	&.info {
+		background-color: #d9edf7;
+   		border-color: #bce8f1;
+	}
+	&.success {
+		    background-color: #dff0d8;
+    	border-color: #d6e9c6;
+	}
 }
 
 /*
@@ -134,9 +151,13 @@ p {
 	margin: 0 0 $indent-var;
 	// sibling indentation
   @if $paragraph-indent == true {
-    & + p {
+    &.textindent {
 			text-indent: $indent-var;
-			margin-top: -($indent-var);
+		}
+
+    & + p, 
+    figure + & {
+			margin-top: ($indent-var);
 		}
 	}
 }

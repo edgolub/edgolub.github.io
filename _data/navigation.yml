@@ -1,10 +1,16 @@
 # Site navigation links
 
 - title: Home
-  url: http://edgolub.github.io
+  url: /
 
-- title: About
-  url: /about/
-
-- title: All Posts
+- title: Blog Posts
   url: /posts/
+
+- title: Presentation
+  url: /presentation/
+
+- title: Portfolio
+  url: /portfolio/
+
+- title: Contact Us
+  url: /contact/

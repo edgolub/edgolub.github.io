@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Blog by Edis Golubich
+title:            EdGolub
 locale:           en_US
 url:
 
@@ -45,12 +45,12 @@ owner:
   avatar: me.jpg
   bio: "Software Developer. Certified introvert. Reddit Lurker. Wannabe blogger. Web practitioner. SciFi addict. Unapologetic reader. The guy who leaves the stove on."
   email: golubicedis@gmail.com
-  disqus-shortname:
+  disqus-shortname: edgolub
   twitter: edgolub
   goodreads: edgolub
   facebook: golubkonjica
   google:
-    plus: #username
+    plus: golubicedis
     analytics:
     verify:
     ad-client:
@@ -58,9 +58,10 @@ owner:
   bing-verify:
   github: edgolub
   stackoverflow: 2606018/edis-golubich
-  linkedin: #username
-  xing: #username
+  linkedin: edgolub
+  codepen: edgolub
   instagram: edgolub
+  xing: #username
   lastfm: #username
   tumblr: #username
   pinterest: #username
@@ -71,7 +72,6 @@ owner:
   soundcloud: #username
   weibo: #username
   flickr: #username
-  codepen: edgolub
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

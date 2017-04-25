@@ -1,4 +1,4 @@
-/*! Responsive Menu */
+/*! Responsive
 // http://tympanus.net/codrops/2013/05/08/responsive-retina-ready-menu/
 //  The function to change the class
 var changeClass = function (r,className1,className2) {
@@ -9,7 +9,7 @@ var changeClass = function (r,className1,className2) {
     else{
     r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+className1+' ');
     }
-    return r.className;
+    return r.className; 
 };
 //  Creating our button in JS for smaller screens
 var menuElements = document.getElementById('site-nav');
@@ -28,8 +28,7 @@ document.onclick = function(e) {
     changeClass(mobileButton, 'navtoggle active', 'navtoggle');
   }
 };
-
-/*! Plugin options and other jQuery stuff */
+alert("test");
 
 // FitVids options
 $(function() {
@@ -65,3 +64,12 @@ $(document).ready(function() {
     mainClass: 'mfp-fade'
   });
 });
+ Menu */
+
+(function ($) {
+  $(document).ready(function(){
+    
+
+
+  });
+})(window.jQuery);

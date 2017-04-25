@@ -33,8 +33,8 @@
     {% include _author-bio.html %}
   </div>
   <div id="index">
-    <h3><a href="{{ site.url}}/posts/">What is new</a></h3>
-    {% for post in site.posts limit:10 %}
+    <h3>Latest Posts</h3>
+    {% for post in site.posts limit:4 %}
     <article>
       {% if post.link %}
         <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
@@ -44,6 +44,11 @@
       {% endif %}
     </article>
     {% endfor %}
+
+    <div class="text-right"><a class="btn" href="{{ site.url}}/posts/">All Blog Posts <i class="fa fa-pl3 fa-md fa-angle-right"></i></a></div>
+ 
+    <h3>Best Works</h3>
+
   </div><!-- /#index -->
 </div><!-- /#main -->
 

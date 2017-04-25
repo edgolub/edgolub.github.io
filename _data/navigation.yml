@@ -1,0 +1,10 @@
+# Site navigation links
+
+- title: Home
+  url: http://edgolub.github.io
+
+- title: About
+  url: /about/
+
+- title: All Posts
+  url: /posts/

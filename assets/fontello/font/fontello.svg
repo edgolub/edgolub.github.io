@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="goodreads" unicode="&#xe800;" d="M498 615c-46-1-80-20-102-56-23-36-35-77-35-124 0-50 12-92 36-126 23-35 57-54 101-54 48 0 83 19 106 55 22 35 34 76 34 125 0 49-12 91-34 126-23 35-58 53-106 54l0 0z m2 235c-276 0-500-224-500-500 0-276 224-500 500-500 276 0 500 224 500 500 0 276-224 500-500 500l0 0z m167-616l0 0c0-8-1-22-2-42-2-20-8-40-18-62-10-22-26-40-49-55-23-15-55-22-97-22-41 0-76 9-103 29-28 20-43 54-46 101l28 0c4-37 17-63 40-79 23-16 50-25 82-25 34 1 60 8 78 21 19 12 33 26 41 43 9 18 14 35 16 51 1 15 1 26 1 33l0 97-1 0c-27-64-74-96-139-96-55 0-97 21-124 60-27 39-41 88-41 147 0 58 15 106 43 146 28 39 69 60 122 61 31 0 59-8 85-25 25-16 43-40 54-73l1 0 0 88 29 0 0-398 0 0z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

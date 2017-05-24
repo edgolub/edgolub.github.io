@@ -5,4 +5,5 @@ date: {{ date }}
 modified:
 image:
 thumbnail:
+published: true
 ---

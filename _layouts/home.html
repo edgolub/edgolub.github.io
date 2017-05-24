@@ -33,8 +33,10 @@
     {% include _author-bio.html %}
   </div>
   <div id="index">
-    <h3>Latest Posts</h3>
-    {% for post in site.posts limit:4 %}
+    <h3>Latest Posts
+      <a class="btn float-right" href="{{ site.url}}/posts/">All Posts <i class="fa fa-pl3 fa-md fa-angle-right"></i></a>
+    </h3>
+    {% for post in site.posts limit:3 %}
     <article>
       {% if post.link %}
         <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
@@ -45,9 +47,34 @@
     </article>
     {% endfor %}
 
-    <div class="text-right"><a class="btn" href="{{ site.url}}/posts/">All Blog Posts <i class="fa fa-pl3 fa-md fa-angle-right"></i></a></div>
- 
-    <h3>Best Works</h3>
+ <br/>
+    <h3>Best Works
+      <a class="btn float-right" href="{{ site.url}}/portfolio/">Full Portfolio <i class="fa fa-pl3 fa-md fa-angle-right"></i></a>
+    </h3>
+
+    <div class="projects">
+      
+      {% for project in site.projects limit:2 %}
+      <div class="project-item">
+
+        <a class="project-link" href="{{ site.url }}{{ project.url }}">
+          <div class="fake-browser-ui">
+              <div class="frame">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+
+             <div class="content">
+                  <img src="{{ project.thumbnail }}" alt="{{ project.title }}">
+             </div>
+          </div>
+        </a>
+
+      </div>
+      {% endfor %}
+
+    </div>
 
   </div><!-- /#index -->
 </div><!-- /#main -->

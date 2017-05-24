@@ -241,7 +241,9 @@ $button-size: 1.5rem;
 	clear: both;
 	margin-top: 2em;
 	h1 {
-		margin-top: 0;
+		margin-top: 0;    
+		border-bottom: 1px solid #ccc;
+    	padding-bottom: 15px;
 	}
 	.post,
 	.page {

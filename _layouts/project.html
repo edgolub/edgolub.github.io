@@ -1,0 +1,42 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+</head>
+
+<body class="project">
+ <div id="project-mainwrap">
+    <a class="exit-project" href="javascript:window.goBack();">x</a>
+    <div id="project-main" role="main">
+      <article class="project">
+        <h1><a href="{{ page.demourl }}" target="_blank">{{ page.title }}</a></h1>
+        <div class="project-wrap">
+          <div class="project-description">
+            {{ content }}
+          </div>
+
+            <div class="fake-browser-ui">
+                <div class="frame">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+               <div class="content">
+                    <img src="{{ page.image }}" alt="{{ page.title }}">
+               </div>
+            </div>
+
+        </div><!-- /.article-wrap -->
+      </article>
+    </div><!-- /#index -->
+  </div>
+
+
+{% include _scripts.html %}
+
+</body>
+</html>

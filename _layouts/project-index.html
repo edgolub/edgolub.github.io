@@ -7,7 +7,7 @@
 {% include _head.html %}
 </head>
 
-<body class="post-index">
+<body class="project-index" id="ajaxBase">
 
 {% include _browser-upgrade.html %}
 
@@ -32,26 +32,31 @@
   <div class="article-author-side">
     {% include _author-bio.html %}
   </div>
-  <div id="index">
+  <div id="project-index">
     <h1>{{ page.title }}</h1>
 
-    {% capture written_year %}'None'{% endcapture %}
-    {% for post in site.posts %}  
-      <!--{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% if year != written_year %}
-        <h3>{{ year }}</h3>
-        {% capture written_year %}{{ year }}{% endcapture %}
-      {% endif %}-->
-      <article>
-        {% if post.link %}
-          <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
-        {% else %}
-          <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-          <div class="posttime"><i class="fa fa-clock-o"></i> {{ post.date | date_to_long_string }}</div>
-          <p>{{ post.excerpt | strip_html | truncate: 240 }}</p>
-        {% endif %}
-      </article>
-    {% endfor %}
+    <div class="projects">
+      {% for project in site.projects limit:6 %}
+      <div class="project-item">
+
+        <a class="project-link" href="{{ site.url }}{{ project.url }}">
+          <div class="fake-browser-ui">
+              <div class="frame">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+
+             <div class="content">
+                  <img src="{{ project.thumbnail }}" alt="{{ project.title }}">
+             </div>
+          </div>
+        </a>
+
+      </div>
+      {% endfor %}
+    </div>
+
   </div><!-- /#index -->
 </div><!-- /#main -->
 

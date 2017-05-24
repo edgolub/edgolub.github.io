@@ -1,0 +1,10 @@
+---
+layout: none
+---
+{
+  "projects" : [
+    {% for project in site.projects %}
+    "{{ project.url }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}

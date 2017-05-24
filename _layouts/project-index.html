@@ -37,23 +37,23 @@
 
     <div class="projects">
       {% for project in site.projects limit:6 %}
-      <div class="project-item">
+        <div class="project-item">
 
-        <a class="project-link" href="{{ site.url }}{{ project.url }}">
-          <div class="fake-browser-ui">
-              <div class="frame">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-              </div>
+          <a class="project-link" href="{{ site.url }}{{ project.url }}">
+            <div class="fake-browser-ui">
+                <div class="frame">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
-             <div class="content">
-                  <img src="{{ project.thumbnail }}" alt="{{ project.title }}">
-             </div>
-          </div>
-        </a>
+               <div class="content">
+                    <img src="{{ project.thumbnail }}" alt="{{ project.title }}">
+               </div>
+            </div>
+          </a>
 
-      </div>
+        </div>
       {% endfor %}
     </div>
 

@@ -176,7 +176,6 @@
 
 .project {
 	background: #111;
-	min-height: 100vh;
 
 
 	.exit-project {
@@ -211,6 +210,9 @@
 			color: #eee;
 			text-align:center;
     		font-family: "PT Sans Narrow",sans-serif;
+    		max-width: 680px;
+    		margin: 5px auto;
+    		margin-bottom: 40px;
 		}
 
 		.project-wrap {
